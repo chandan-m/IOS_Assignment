@@ -21,5 +21,12 @@ You must also ensure that the system is efficient (e.g., no request should be ke
 fair (e.g., all workers share the load almost equally). Use any IPC mechanism of your choice that works on a modern multicore system 
 and implement this on Linux.
 
+Execution Steps:
 
+Server:
+gcc server.c -o server -pthread
+./server
 
+Client:
+gcc client.c -o client -pthread
+./client
